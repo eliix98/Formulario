@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="index.js"></script>
+
+</head>
+<body>
+    <section class="">
+        <article class="contiene-form">
+            <h2 class="titulo-form">Create Account</h2>
+            <form action="" id="miFormulario" onsubmit="javascript: return validaFormulario()" method="post">
+                <div class="campos-formulario">
+                    <label for="nombre">Nombre</label>
+                    <input class="campos-input" type="text" name="nombre" id="nombre" />
+                    <span class="texto-input" id="error-nombre">Rellene este campo</span>
+                </div>
+                <div class="campos-formulario">
+                    <label for="email">Email</label>
+                    <input class="campos-input" type="mail" name="email" id="email" />
+                    <span class="texto-input" id="error-email">Rellene este campo</span>
+                </div>
+                <div class="campos-formulario">
+                    <label for="pass">Clave</label>
+                    <input class="campos-input" type="password" name="pass" id="pass" />
+                    <span class="texto-input" id="error-pass">Rellene este campo</span>
+                </div>
+                <div class="campos-formulario">
+                    <label for="pass2">Confirme su clave</label>
+                    <input class="campos-input" type="password" name="pass2" id="pass2" />
+                    <span class="texto-input" id="error-pass2">Rellene este campo</span>
+                </div>
+                <button class="btn-submit" type="submit">Enviar</button>
+            </form>
+        </article>
+    </section>    
+</body>
+</html>
